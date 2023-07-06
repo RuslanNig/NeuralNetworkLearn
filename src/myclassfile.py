@@ -3,13 +3,16 @@ from tkinter import *
 #create top general settings LabelFrame:
 class TitleSettings: #class for title settings - amount of layers
     def __init__(self, master):
-        self.top_set_frame = LabelFrame(master, text='General Settings', width=500, height = 50) #frame for input neurons layer
+        self.top_set_frame = LabelFrame(master, text='General Settings', width=700, height = 50) #frame for input neurons layer
         self.top_set_frame.propagate(0)
         self.top_set_frame.pack(side='top',anchor=NW)
         self.ent_of_layers_amount = Entry(self.top_set_frame,width=15)
+        self.ent_max_neurons_of_layer = Entry(self.top_set_frame, width=15)
         self.button_amount_create = Button(self.top_set_frame,width= 35,text="Create Layers")
         Label(self.top_set_frame,text='Layers Amount', width=20).pack(side = LEFT)
         self.ent_of_layers_amount.pack(side=LEFT)
+        Label(self.top_set_frame,text='MAX neurons in one layer', width=20).pack(side=LEFT)
+        self.ent_max_neurons_of_layer.pack(side=LEFT)
         #button amount of layers cretion
         self.button_amount_create.pack(side=LEFT, padx=(5,5))
 
@@ -23,6 +26,7 @@ class LayerFrame: #class for neuron layers amount
         self.ent_of_neurons_amount = Entry(self.frame_for_layer,width=5)
         self.button_neuron_amount_create = Button(self.frame_for_layer,width=15,text="Cr. Nr-s")
         self.ent_of_neurons_amount.pack(side=LEFT)
+        #button for neurons creation
         self.button_neuron_amount_create.pack(side=LEFT,padx=(5,5))
 
         self.canvas_after_frame = Canvas(master, width=60, height=200)

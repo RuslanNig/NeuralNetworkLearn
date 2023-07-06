@@ -1,6 +1,8 @@
 #
 #NEXT STEP
-#create input of weights, functions
+#we should create function for layer_neurons button
+#create in global file settings.py: array for neurons, input of weights, functions
+#connect Entry and checkboxes with numpy array of neurons
 #
 #STYLE PEP8 
 https://docs.python-guide.org/writing/structure/
