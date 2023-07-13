@@ -1,6 +1,14 @@
 #
 #NEXT STEP
-#we should create function for layer_neurons button
+
+we should connect entries of each layers with elements of numpy array
+
+we should created function for layer_neurons_button
+when we push this button we should get its number, so we should set this number as name
+we know how to set the name of widget (and we do it autimatically)
+and we know how get the name of the widget
+
+
 #create in global file settings.py: array for neurons, input of weights, functions
 #connect Entry and checkboxes with numpy array of neurons
 #
